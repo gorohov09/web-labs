@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Внести доходы/расходы</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1><a href="index.html">Учет личных расходов</a></h1>
+
+			<nav>
+				<a href="enter-expenses-deposit.html">Внести расходы/доходы</a>
+				<a href="statistic-day.html">Статистика по дням</a>
+				<a href="statistic-category.html">Статистика по категориям</a>
+			</nav>
+		</header>
+
+		<main>
+			<h2>Внесите свои доходы/расходы</h2>
+            <div>
+                <div>
+                    <h3>Расходы(в рублях)</h3>
+                    <form action="enter-expenses-deposit.html" method="post">
+                        <div>
+                            <input type="text" id="expenses" name="enter_expenses">
+                        </div>
+                        
+                        <div>
+                            <select name="category_expenses" id="category_expenses-select">
+                                <option value="">Выберите категорию</option>
+                                <option value="meal">Еда</option>
+                                <option value="education">Образование</option>
+                                <option value="sport">Спорт</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+
+                <div>
+                    <h3>Доходы(в рублях)</h3>
+                    <form action="enter-expenses-deposit.html" method="post">
+                        <div>
+                            <input type="text" id="deposit" name="enter_deposit">
+                        </div>
+
+                        <div>
+                            <select name="category_deposit" id="category_deposit-select">
+                                <option value="">Выберите категорию</option>
+                                <option value="meal">Еда</option>
+                                <option value="education">Образование</option>
+                                <option value="sport">Спорт</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+			
+		</main>
+
+		<footer>
+			<h2>Справочная информация</h2>
+			<div>
+				<div>
+					<p>Приложение разработано компанией "Codic"</p>
+				</div>
+				<div>
+					<p>Связь с разработчиком: codic@yandex.ru</p>
+				</div>
+				<div>
+					<p>Мы в телеграмме: telegram</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
