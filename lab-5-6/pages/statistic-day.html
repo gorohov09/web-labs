@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="../css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    	<title>Статистика по дням</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1><a href="../index.html">Учет личных расходов</a></h1>
+
+			<nav>
+				<a href="enter-expenses-deposit.html">Внести расходы/доходы</a>
+				<a href="statistic-day.html">Статистика по дням</a>
+				<a href="statistic-category.html">Статистика по категориям</a>
+			</nav>
+		</header>
+
+		<main>
+            <div class="tabcontainer">
+
+                <div class="tabheader">
+                    <h3>Выберите статистику</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">По дням</div>
+                        <div class="tabheader__item">По месяцам</div>
+                    </div>
+                </div>
+
+                <div class="tabcontent">
+                    <div class="statistic-day">
+                        <h2>Ваша статистика по дням</h2>
+        
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Время</th>
+                                    <th>Тип(расход/доход)</th>
+                                    <th>Сумма(р.)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>12.12.2012</th>
+                                    <th>12:45</th>
+                                    <th>Доход</th>
+                                    <th>500</th>
+                                </tr>
+                                <tr>
+                                    <th>12.12.2015</th>
+                                    <th>12:45</th>
+                                    <th>Расход</th>
+                                    <th>600</th>
+                                </tr>
+                                <tr>
+                                    <th>12.12.2015</th>
+                                    <th>12:45</th>
+                                    <th>Расход</th>
+                                    <th>600</th>
+                                </tr>
+                                <tr>
+                                    <th>12.12.2015</th>
+                                    <th>12:45</th>
+                                    <th>Расход</th>
+                                    <th>600</th>
+                                </tr>
+                                <tr>
+                                    <th>12.12.2015</th>
+                                    <th>12:45</th>
+                                    <th>Расход</th>
+                                    <th>600</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <div class="statistic-day">
+                        <h2>Ваша статистика по месяцам</h2>
+        
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Месяц</th>
+                                    <th>Потрачено (р.)</th>
+                                    <th>Получено (р.)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Январь</th>
+                                    <th>2000 (р.)</th>
+                                    <th>3000 (р.)</th>
+                                </tr>
+                                <tr>
+                                    <th>Январь</th>
+                                    <th>2000 (р.)</th>
+                                    <th>3000 (р.)</th>
+                                </tr>
+                                <tr>
+                                    <th>Январь</th>
+                                    <th>2000 (р.)</th>
+                                    <th>3000 (р.)</th>
+                                </tr>
+                                <tr>
+                                    <th>Январь</th>
+                                    <th>2000 (р.)</th>
+                                    <th>3000 (р.)</th>
+                                </tr>
+                                <tr>
+                                    <th>Январь</th>
+                                    <th>2000 (р.)</th>
+                                    <th>3000 (р.)</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+			<!-- <div class="statistic-day">
+                <h2>Ваша статистика по дням</h2>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Время</th>
+                            <th>Тип(расход/доход)</th>
+                            <th>Сумма(р.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>12.12.2012</th>
+                            <th>12:45</th>
+                            <th>Доход</th>
+                            <th>500</th>
+                        </tr>
+                        <tr>
+                            <th>12.12.2015</th>
+                            <th>12:45</th>
+                            <th>Расход</th>
+                            <th>600</th>
+                        </tr>
+                        <tr>
+                            <th>12.12.2015</th>
+                            <th>12:45</th>
+                            <th>Расход</th>
+                            <th>600</th>
+                        </tr>
+                        <tr>
+                            <th>12.12.2015</th>
+                            <th>12:45</th>
+                            <th>Расход</th>
+                            <th>600</th>
+                        </tr>
+                        <tr>
+                            <th>12.12.2015</th>
+                            <th>12:45</th>
+                            <th>Расход</th>
+                            <th>600</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+
+            
+		</main>
+
+		<footer>
+			<h2>Справочная информация</h2>
+			<div class="inf">
+				<div>
+					<p>Приложение разработано компанией "Codic"</p>
+				</div>
+				<div>
+					<p>Связь с разработчиком: codic@yandex.ru</p>
+				</div>
+				<div>
+					<p>Мы в телеграмме: telegram</p>
+				</div>
+			</div>
+		</footer>
+
+        <script src="../js/statistic-day.js"></script>
+	</body>
+</html>

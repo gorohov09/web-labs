@@ -1,0 +1,16 @@
+{
+    "statistics_category": [
+        {
+            "type": "Спорт",
+            "value": 800 
+        },
+        {
+            "type": "Еда",
+            "value": 200 
+        },
+        {
+            "type": "Игры",
+            "value": 700 
+        }
+    ]
+}
