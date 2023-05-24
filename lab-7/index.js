@@ -1,12 +1,19 @@
 import express from 'express';
 import path from 'path';
 import {fileURLToPath} from 'url';
+import mongoose from 'mongoose';
+import {ExpensController} from './controllers/controller.js';
 
 const port = 8000;
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+mongoose
+    .connect('mongodb://127.0.0.1:27017/db-web-lab')
+    .then(() => {   console.log('DB ok')})
+    .catch((err) => {console.log('DB error', err)});
 
 //Объект для хранения расходов и доходов 
 const repository = {
@@ -34,18 +41,8 @@ const category = {
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.json());
 
-app.get('/category', (req, res) => {
-    res.json(category);
-});
-
-app.post('/enter', (req, res) => {
-    const data = req.body;
-    data.value = +data.value;
-    repository.data.push(data);
-
-    console.log(repository);
-    res.sendStatus(200);
-});
+app.get('/category', ExpensController.getAll);
+app.post("/enter", ExpensController.createExpens)
 
 app.listen(port, () => {
     console.log(`Сервер запущен на http://localhost:${port}`);

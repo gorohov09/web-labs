@@ -23,7 +23,7 @@ function handleFormSubmit(event) {
         category: text
     }
 
-    postData('http://localhost:8000/enter', data) //Вынесли код
+    postData('http://localhost:8000/enter', data)
             .then(data => {
                 console.log(data);
                 applicantForm.reset();
