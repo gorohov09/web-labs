@@ -42,7 +42,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.json());
 
 app.get('/category', ExpensController.getAll);
-app.post("/enter", ExpensController.createExpens)
+app.post("/enter", ExpensController.createExpens);
+app.post("/deleteExpense", ExpensController.remove);
+app.post("/putExpense", ExpensController.update);
 
 app.listen(port, () => {
     console.log(`Сервер запущен на http://localhost:${port}`);
